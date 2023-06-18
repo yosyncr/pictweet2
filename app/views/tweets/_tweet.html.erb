@@ -1,4 +1,9 @@
-   <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+   <div class="content_post">
+      <% if tweet.image.attached? %>
+      <div class="post-image-container">
+      <%= image_tag tweet.image, class: 'post-image' %>
+      </div>
+      <% end %>
       <div class="more">
         <span><%= image_tag 'arrow_top.png' %></span>
         <ul class="more_list">
@@ -18,7 +23,7 @@
       <p><%= tweet.text %></p>
       <span class="name">
         <a href="/users/<%= tweet.user.id %>">
-          <span>投稿者</span><%= tweet.user.nickname %>
+          <span>投稿者</span><%= tweet.user.nickname %
         </a>
       </span>
     </div>
