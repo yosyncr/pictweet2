@@ -752,9 +752,6 @@ header.header {
   -webkit-box-pack: justify;
 }
 
-header.header div.header__bar.row {
-  
-}
 
 header.header div.header__bar.row h1.grid-6 {
   font-size: 30px;
@@ -868,7 +865,6 @@ div.contents.row .new_user {
 
 div.contents.row div.content_post {
   margin: 20px 0;
-  padding: 30px;
   position: relative;
   height: 400px;
   color: #fff;
@@ -1073,4 +1069,16 @@ p{
 
 h4{
   color:white;
+}
+.post-image-container {
+  width: 660px;
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 3px
+}
+.post-image{
+ 
+  object-fit: cover;
+  
 }
